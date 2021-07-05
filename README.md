@@ -1,6 +1,5 @@
-## DesignPatterns
-
-# This repository is a collection of design patterns that I have learned
+# Introduction to design patterns
+The main goal is to produce easily maintainable and extendable code. Be careful not to overuse patterns on simple problems, it is always possible to refactor code when a feature becomes more complex over time. Knowing when to implement a pattern over a functional approach is key.
 
 ## Strategy Pattern:
-useful when multiple classes implement the same method but each implementation differs a lot. Useful for example for different payment services that each have a "sendPayment" function. 
+Useful when multiple classes implement the same method but each implementation differs.
