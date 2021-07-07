@@ -3,5 +3,12 @@ The main goal is to produce easily maintainable and extendable code. Be careful 
 
 Inspired by this great youtube series: https://www.youtube.com/watch?v=vNHpsC5ng_E&list=PLF206E906175C7E07
 
-## Strategy Pattern:
+## Strategy
 Useful when multiple classes implement the same method but each implementation differs. Especially if an implementation has to change/switch at runtime.
+
+## Factory
+Create an object at runtime dependant on some factor where u need a bunch of if/else statements for each KIND of an object. Objects must inherit from the same super class.
+Question: Is the 2nd sentence even true? Why can't we also have a factory for a bunch of classes that implement the same interface?
+
+## Observer
+When we want to push updates from the observed object that something has changed instead of the observer polling for changes. 
