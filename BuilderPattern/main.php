@@ -4,13 +4,9 @@ class User {
     public string $name;
     public string $address;
 
-    private function __construct()
+    public function __construct(string $name)
     {
-    }
-
-    public static function build() : BuildUser
-    {
-        return new BuildUser(new self);
+        $this->name = $name;
     }
 
     public function sayName()
@@ -22,43 +18,21 @@ class User {
     {
         return $this->name ?? 'not set';
     }
-}
-
-interface BuildUserInterface {
-    public function setName(string $name) : self;
-    public function setAddress(string $address) : self;
-}
-
-class BuildUser implements BuildUserInterface {
-    private User $user;
-
-    public function __construct(User $user)
-    {
-        $this->user = $user;
-    }
 
     public function setName(string $name) : self
     {
-        $this->user->name = $name;
+        $this->name = $name;
         return $this;
     }
 
     public function setAddress(string $address): self
     {
-        $this->user->address = $address;
+        $this->address = $address;
         return $this;
-    }
-
-    public function get() : User
-    {
-        return $this->user;
     }
 }
 
-$user = User::build()->setName('Bob')->setAddress('Bob Road')->get();
+$user = (new User('Bob'))->setAddress('Bob Road');
 $user->sayName();
-
-$user2 = User::build()->get();
-$user2->sayName();
 
 
