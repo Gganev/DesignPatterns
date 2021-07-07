@@ -14,3 +14,6 @@ Factory on steroids. Useful when even the attributes of the objects that are bei
 
 ## Observer
 When we want to push updates from the observed object that something has changed instead of the observer polling for changes. 
+
+## Singleton
+When u don't want more than one instance. Careful when using Threads.
