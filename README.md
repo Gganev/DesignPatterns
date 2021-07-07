@@ -8,7 +8,9 @@ Useful when multiple classes implement the same method but each implementation d
 
 ## Factory
 Create an object at runtime dependant on some factor where u need a bunch of if/else statements for each KIND of an object. Objects must inherit from the same super class.
-Question: Is the 2nd sentence even true? Why can't we also have a factory for a bunch of classes that implement the same interface?
+
+## Abstract Factory
+Factory on steroids. Useful when even the attributes of the objects that are being created need to provided by a factory. It can be thought of as combining the factory with the strategy pattern.
 
 ## Observer
 When we want to push updates from the observed object that something has changed instead of the observer polling for changes. 
